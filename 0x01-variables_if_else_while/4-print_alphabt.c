@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - point enpty
+ * main - Entry point
  * Return: Awlays 0 (Success)
  */
 
@@ -14,7 +14,7 @@ int main(void)
 			if ((c != 'q' && c != 'e') && c <= 'z')
 				putchar(c);
 			c++;
-
+		}
 		putchar('\n');
 		return (0);
 }
