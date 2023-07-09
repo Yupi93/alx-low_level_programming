@@ -5,6 +5,7 @@
 /**
  * check_num - check - string there are digit
  * @str: array str
+ *
  * Return: Always 0 (Success)
  */
 int check_num(char *str)
@@ -25,15 +26,19 @@ int check_num(char *str)
 	}
 	return (1);
 }
+
 /**
  * main - Print the name of the program
  * @argc: Count arguments
  * @argv: Arguments
+ *
  * Return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
+
 {
+
 	/*Declaring variables*/
 	int count;
 	int str_to_int;
@@ -45,9 +50,10 @@ int main(int argc, char *argv[])
 		if (check_num(argv[count]))
 
 		{
-			tr_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
+			str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
 			sum += str_to_int;
 		}
+
 		/*Condition if one of the number contains symbols that are not digits*/
 		else
 		{
